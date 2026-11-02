@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Susmita Adhikari - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        .profile-card {
-            background: #ffffff;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .technical-skill {
-            margin-top: 20px;
-            padding: 15px;
-            background: #ecf0f1;
-            border-radius: 6px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="profile-card">
-        <h1>Susmita Adhikari</h1>
-        <p>Computer Engineering Student | Seoul Theological University</p>
-        
-        <div class="technical-skill">
-            <h3>Technical Skill</h3>
-            <p>Python, HTML, CSS, GitHub, VS Code</p>
+    <nav class="navbar">
+        <div class="logo">Susmita</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="card">
+            <div class="passport-img-container">
+                <img src="profile.jpg.jpg" alt="Susmita Adhikari">
+            </div>
+            <h1>Susmita Adhikari</h1>
+            <p class="title">Computer Engineering Student</p>
+            <p class="bio">Studying at Seoul Theological University. Passionate about coding, traveling, and exploring new tech areas.</p>
+            
+            <div class="button-group">
+                <button class="btn">GitHub</button>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1>Second Card</h1>
+            <p class="title">Portfolio Project</p>
+            <p class="bio">Testing horizontal flexbox layout with multiple side-by-side cards.</p>
+            
+            <div class="button-group">
+                <button class="btn">View</button>
+            </div>
         </div>
     </div>
 
-    <!-- Link your JavaScript file just above the closing body tag[span_0](start_span)[span_0](end_span) -->
+    <!-- Link your JavaScript file just above the closing body tag[span_2](start_span)[span_2](end_span) -->
     <script src="script.js"></script>
 </body>
 </html>
