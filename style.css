@@ -1,0 +1,121 @@
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navbar Styling --- */
+.navbar {
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* --- Content Wrapper & Cards --- */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- Profile Image Container --- */
+.passport-img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #3498db;
+}
+
+.passport-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Card Text Styles --- */
+.card h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.card .title {
+    font-size: 16px;
+    color: #7f8c8d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card .bio {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* --- Button Group Styles --- */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
