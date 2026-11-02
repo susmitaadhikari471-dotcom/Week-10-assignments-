@@ -1,5 +1,5 @@
 // --- Part 1: Time-based Greeting ---
-let userName = prompt("Enter your name:");
+let userName = prompt("Susmita🤩:");
 let currentHour = new Date().getHours(); 
 
 if (currentHour < 12) {
@@ -11,7 +11,7 @@ if (currentHour < 12) {
 }
 
 // --- Part 2: Age and Days Lived Verification ---
-let birthYear = prompt("Enter your birth year:");
+let birthYear = prompt("2006:");
 let age = 2026 - birthYear;
 let daysLived = age * 365;
 
