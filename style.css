@@ -46,17 +46,17 @@ body {
 /* --- Content Wrapper & Cards (Horizontal Layout) --- */
 .content-wrapper {
     display: flex;
-    flex-direction: row;       /* Cards lai side-by-side (horizontal) banauxa */
-    justify-content: center;   /* Cards lai center ma rakhxa */
+    flex-direction: row;       
+    justify-content: center;   
     align-items: flex-start;
     padding: 30px 20px;
-    gap: 20px;                 /* Duita card bich ko gap */
-    flex-wrap: wrap;           /* Mobile screen ma responsive huna help garxa */
+    gap: 20px;                 
+    flex-wrap: wrap;           
 }
 
 .card {
     background: #ffffff;
-    flex: 1;                   /* Cards lai equal space lina help garxa */
+    flex: 1;                   
     min-width: 280px;          
     max-width: 400px;          
     padding: 30px;
