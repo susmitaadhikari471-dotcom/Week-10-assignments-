@@ -1,21 +1,25 @@
-// --- Part 1: Time-based Greeting ---
-let userName = prompt("Susmita🤩:");
-let currentHour = new Date().getHours(); 
+// Part 1: Time-based Greeting
+let userName = prompt("Susmee:");
+let currentHour = new Date().getHours();
+let greeting = "";
 
 if (currentHour < 12) {
-    console.log("Good morning, " + userName + "!");
+    greeting = "Good morning";
 } else if (currentHour < 18) {
-    console.log("Good afternoon, " + userName + "!");
+    greeting = "Good afternoon";
 } else {
-    console.log("Good evening, " + userName + "!");
+    greeting = "Good evening";
 }
 
-// --- Part 2: Age and Days Lived Verification ---
+console.log(`${greeting}, ${userName}!`);
+
+
+// Part 2: Age and Days Lived Verification
 let birthYear = prompt("2006:");
 let age = 2026 - birthYear;
 let daysLived = age * 365;
 
-console.log("You have lived for approximately " + daysLived + " days!");
+console.log(`You have lived for approximately ${daysLived} days!`);
 
 if (age >= 18) {
     console.log("You are an adult.");
