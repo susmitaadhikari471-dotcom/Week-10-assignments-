@@ -43,12 +43,12 @@ body {
     color: #3498db;
 }
 
-/* --- Content Wrapper & Cards (Horizontal Layout) --- */
+/* --- Content Wrapper & Cards (Horizontal Layout with Equal Height) --- */
 .content-wrapper {
     display: flex;
     flex-direction: row;       
     justify-content: center;   
-    align-items: flex-start;
+    align-items: stretch;      /* Ensures both cards stretch to have the exact same height */
     padding: 30px 20px;
     gap: 20px;                 
     flex-wrap: wrap;           
@@ -56,9 +56,10 @@ body {
 
 .card {
     background: #ffffff;
-    flex: 1;                   
-    min-width: 280px;          
-    max-width: 400px;          
+    width: 380px;              /* Fixed width so both cards are identical in width */
+    display: flex;
+    flex-direction: column;    /* Stack content vertically */
+    justify-content: space-between; /* Distributes inner content evenly */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -106,6 +107,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: auto;          /* Pushes buttons to the bottom for consistent alignment */
 }
 
 .btn {
